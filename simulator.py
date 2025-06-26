@@ -13,8 +13,8 @@ def generate_sensor_data() -> Signal:
     cardiac_rate = random.randint(120, 160)  # BPM
 
     timestamp = datetime.datetime.now(datetime.UTC).isoformat() + "Z"
-    id = random.randint(1, 5)
-    sensor_id = f"neonate_{id:03d}"
+    id_number = random.randint(1, 5)
+    sensor_id = f"neonate_{id_number:03d}"
     status = check_status(temperature, cardiac_rate)
     return Signal(sensor_id, timestamp, temperature, cardiac_rate, status)
 
