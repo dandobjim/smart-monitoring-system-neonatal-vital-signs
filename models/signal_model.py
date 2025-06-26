@@ -1,5 +1,22 @@
+import enum
+
+
+class SignalStatus(enum.Enum):
+    NORMAL = "normal"
+    FIVER = "fiver"
+    TACHYCARDIA = "tachycardia"
+
+    def __str__(self):
+        return self.value
+
+
 class Signal:
-    def __init__(self, sensor_id, timestamp, temperature, heart_rate, status):
+    def __init__(self,
+                 sensor_id: str,
+                 timestamp: str,
+                 temperature: float,
+                 heart_rate: float,
+                 status: SignalStatus):
         self.sensor_id = sensor_id
         self.timestamp = timestamp
         self.temperature = temperature
