@@ -1,2 +1,5 @@
 # Testing
  pytest==8.4.1
+
+ # Kafka
+ kafka-python==2.2.15
