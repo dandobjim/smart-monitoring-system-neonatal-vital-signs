@@ -1,8 +1,11 @@
 # Testing
- pytest==8.4.1
+pytest==8.4.1
 
  # Kafka
- kafka-python==2.2.15
+kafka-python==2.2.15
 
 # Database
- psycopg2-binary==2.9.10
+psycopg2-binary==2.9.10
+
+# PySpark
+pyspark == 4.0.0
