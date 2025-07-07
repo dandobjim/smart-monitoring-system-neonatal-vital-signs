@@ -1,3 +1,4 @@
 .idea
 .venv
 kafka_cluster
+postgres_data
