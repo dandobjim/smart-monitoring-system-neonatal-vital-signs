@@ -3,3 +3,6 @@
 
  # Kafka
  kafka-python==2.2.15
+
+# Database
+ psycopg2-binary==2.9.10
