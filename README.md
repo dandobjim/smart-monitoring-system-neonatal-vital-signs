@@ -26,7 +26,7 @@ This project aims to design and implement a smart real-time monitoring system fo
 3. **Data Ingestion Layer**
     - Apache Kafka or MQTT as the messaging queue.
     - Optional REST API for HTTP-based ingestion.
-4. **Stream Processing**
+4. **Stream Processing (In Progress) **
     - Real-time processing using Apache **Spark Streaming** or **Flink**.
     - Applies threshold checks and anomaly detection.
 5. **Storage**
