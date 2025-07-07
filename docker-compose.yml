@@ -27,16 +27,3 @@ services:
       - ./kafka_cluster/data:/var/lib/kafka/data
     networks:
       - kafka-net
-
-  kafka-ui:
-    image: provectuslabs/kafka-ui:latest
-    container_name: kafka-cluster-ui
-    ports:
-      - "8080:8080"
-    environment:
-      KAFKA_CLUSTERS_0_NAME: local
-      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: localhost:9092
-    depends_on:
-      - broker
-    networks:
-      - kafka-net
