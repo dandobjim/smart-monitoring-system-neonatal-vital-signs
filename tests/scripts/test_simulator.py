@@ -1,5 +1,5 @@
 from models.signal_model import SignalStatus
-from simulator import check_status, generate_sensor_data
+from scripts.simulator import check_status, generate_sensor_data
 
 
 class TestSimulator:

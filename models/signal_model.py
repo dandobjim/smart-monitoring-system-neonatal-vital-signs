@@ -1,4 +1,5 @@
 import enum
+from dataclasses import dataclass
 
 
 class SignalStatus(enum.Enum):
@@ -10,6 +11,7 @@ class SignalStatus(enum.Enum):
         return self.value
 
 
+@dataclass
 class Signal:
     def __init__(self,
                  sensor_id: str,
